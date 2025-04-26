@@ -3,6 +3,7 @@
 Welcome to the FlyskAI documentation!  
 Here is an overview of the app features:
 
+
 ## 🛫 Cockpit Mode
 - Live Primary Flight Display (Speed, Altitude, Heading, Drift, Vertical Speed)
 - Real-time location and sensors tracking

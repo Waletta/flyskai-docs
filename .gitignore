@@ -1,0 +1,13 @@
+# MkDocs build directory
+site/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+.fsdocs/

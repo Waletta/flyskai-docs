@@ -1,0 +1,30 @@
+name: Deploy FlyskAI Docs 🚀
+
+on:
+  push:
+    branches:
+      - main  # every time you push to main, deploy
+
+permissions:
+  contents: write  # needed to push to gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+python-version: '3.9'  # Match your local Python version
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Deploy MkDocs site
+        run: |
+          mkdocs gh-deploy --force
+

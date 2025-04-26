@@ -1,0 +1,18 @@
+site_name: FlyskAI
+theme:
+  name: material
+  palette:
+    scheme: slate
+  font:
+    text: Roboto
+    code: Roboto Mono
+nav:
+  - Home: index.md
+  - Features: features.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - tables
+  - pymdownx.superfences
+
